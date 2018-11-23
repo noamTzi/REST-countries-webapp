@@ -1,0 +1,106 @@
+/*written by Noam Tzionit*/
+
+/* #-------------------------------------------------------------------------#*/
+html{
+    background-color: #4f8fcd;
+    color: black;
+    background-image: url(./back1.png);
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.back {
+    background-color: tomato;
+}
+
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
+
+.main{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -45%);
+    width: 500px;
+    max-height: 500px;
+    padding: 10px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#data{
+    padding: 20px 0px;
+    overflow-y: scroll;
+    max-height: 200px;
+    /* background-color: transparent; */
+}
+
+#data:empty{
+    height: 0px;
+}
+
+.buttonSearch{
+    font-size: 103%;
+    background-color: transparent;
+    font-family: 'Karla', sans-serif;
+    border: 0px transparent solid;
+    font-weight: bold;
+    color: #1e4db3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonSearch:hover{
+    background-color: transparent;
+    font-family: 'Karla', sans-serif;
+    border: 0px transparent solid;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.flag{
+    float:left;
+    height:100%;
+    width:130px;
+    margin-right:20px;
+    border: 1px solid gray;
+}
+
+.countryInfo{
+    display:flex;
+    margin:2px;
+    padding:2px;
+    border-bottom:1px dotted gray;
+}
+
+#date{
+    text-align: right;
+    line-height: 0.1em;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0px;
+    font-size: 0.7em;
+    border-bottom:1px dotted gray;
+}
+
+/* input:invalid {
+    box-shadow: 0 0 4px 1px red;
+} */

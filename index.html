@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="theworld.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="theworld.1.js"></script>
+    <title>The World</title>
+</head>
+
+<body>
+    <div class="back">
+        <div class="main">
+            <div id="date"></div>
+            <form role="search" action="javascript">
+                <h3>
+                    Where do you want to go today?
+                </h3>
+                <input id="searchName" type="search" name="search" placeholder="Search..." required minlength="1" pattern="^[a-zA-Z ']+$">
+                <button type="submit" class="buttonSearch" id="name"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+            </form>
+            <p style="text-align: center;">
+                <i class="fa fa-plane" aria-hidden="true" style="color: #1e4db3;"></i>&nbsp;&nbsp;Can't decide?
+                <button id="everywhere" class="buttonSearch" style="font-size: 16px;">Take me everywhere...</button>
+            </p>
+            <div id="bonus"></div>
+            <div id="data"></div>
+        </div>
+    </div>
+</body>
+
+</html>
